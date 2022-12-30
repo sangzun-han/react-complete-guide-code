@@ -24,21 +24,21 @@ function App() {
     },
   ];
 
-  return (
-    React.createElement(
-      "div",
-      {},
-      React.createElement("h2"),
-      {},
-      "Lets's get started!"
-    ),
-    React.createElement(ExpenseList, { expenses: expenses })
-  );
   // return (
-  //   <div>
-  //     <ExpenseList expenses={expenses} />
-  //   </div>
+  //   React.createElement(
+  //     "div",
+  //     {},
+  //     React.createElement("h2"),
+  //     {},
+  //     "Lets's get started!"
+  //   ),
+  //   React.createElement(ExpenseList, { expenses: expenses })
   // );
+  return (
+    <div>
+      <ExpenseList expenses={expenses} />
+    </div>
+  );
 }
 
 export default App;
