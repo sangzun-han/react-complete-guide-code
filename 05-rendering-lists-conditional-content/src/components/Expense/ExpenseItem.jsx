@@ -10,14 +10,16 @@ const ExpenseItem = ({ expense }) => {
   };
 
   return (
-    <Card className="expense-item">
-      <ExpenseDate expense={expense} />
-      <div className="expense-item__description">
-        <h2>{title}</h2>
-        <div className="expense-item__price">${expense.amount}</div>
-      </div>
-      <button onClick={clickHandler}>Change Title</button>
-    </Card>
+    <li>
+      <Card className="expense-item">
+        <ExpenseDate expense={expense} />
+        <div className="expense-item__description">
+          <h2>{title}</h2>
+          <div className="expense-item__price">${expense.amount}</div>
+        </div>
+        <button onClick={clickHandler}>Change Title</button>
+      </Card>
+    </li>
   );
 };
 
